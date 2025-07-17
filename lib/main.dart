@@ -17,7 +17,9 @@ class MyApp extends StatelessWidget {
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
+      //home : defines which page as the start up page
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      //home : Info(),
     );
   }
 }
@@ -174,6 +176,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
               //TODO 12: Insert an Expanded widget to take up empty screen spaces
               Expanded(child: SizedBox(height: double.infinity,)),
+
+              IconButton(
+                icon: Icon(Icons.info),
+                iconSize: 48,
+                color: Colors.orangeAccent,
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Info(bmi: _bmiOutput,)));
+                },
+              ),
 
               //TODO 13: Insert reset and calculate buttons
               Row(

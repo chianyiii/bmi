@@ -25,6 +25,7 @@ class Info extends StatelessWidget {
                     'in metres (m).',
               ),
 
+              //Table of information
               Table(
                 border: TableBorder.all(color: Colors.orangeAccent),
                 children: const [

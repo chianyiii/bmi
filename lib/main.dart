@@ -179,6 +179,7 @@ class _MyHomePageState extends State<MyHomePage> {
               //TODO 12: Insert an Expanded widget to take up empty screen spaces
               Expanded(child: SizedBox(height: double.infinity,)),
 
+              //Practical 4 : Icon part
               IconButton(
                 icon: Icon(Icons.info),
                 iconSize: 48,

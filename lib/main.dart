@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+import 'info.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -103,9 +105,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
       body: Center(
 //TODO 7: Insert a Padding widget
-    child: Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Column(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
 
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
